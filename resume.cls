@@ -35,7 +35,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\bullet$} % Set default address separator to a diamond
+
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -65,7 +65,7 @@
 }
 
 % \printname is used to print the name as a page header
-\def \printname {
+\def \printname  {
   \begingroup
     \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
     \nameskip\break
@@ -116,7 +116,7 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \begin{list}{$\bullet$}{\leftmargin=0.2em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
